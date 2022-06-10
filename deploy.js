@@ -1,5 +1,11 @@
 /** @param {NS} ns */
 
+// Used to deploy the master.js file to all rooted and purchased servers, including home
+// This script will copy the file to each server and run it at full RAM usage with the host server as the target
+// If you have any available purchased servers, the script will attempt to rank all of the servers which are currently
+//      rooted and have funds available by calculating income generation per second; it will then run the master.js
+//      script on all purchased servers and home, targeting the highest income servers
+
 const file = 'master.js';
 
 export async function main(ns) {

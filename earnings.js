@@ -1,4 +1,7 @@
 /** @param {NS} ns **/
+
+// This script will add script income and script xp per second information to the Overview window
+
 export async function main(ns) {
 
     const doc = document; // 25GB RAM

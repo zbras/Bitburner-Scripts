@@ -1,5 +1,7 @@
 /** @param {NS} ns */
 
+// Used to open ports and nuke servers which meet the required criteria
+
 export async function main(ns) {
 
     while (true) {
@@ -21,10 +23,6 @@ export async function main(ns) {
 
                     if (server == 'home') { continue }
                     if (ns.getServerRequiredHackingLevel(server) > curr_hacking_level) { continue };
-                    //if (ns.getServerMaxMoney(server) == 0) { continue };
-
-                    var open_ports = 0;
-                    var num_req = ns.getServerNumPortsRequired(server);
 
                     try {
 

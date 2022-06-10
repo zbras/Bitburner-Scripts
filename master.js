@@ -1,4 +1,7 @@
 /** @param {NS} ns **/
+
+// Oh yes
+
 export async function main(ns) {
 
     var target_server = ns.args[0];

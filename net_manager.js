@@ -1,4 +1,7 @@
 /** @param {NS} ns **/
+
+// This script will coninually run, purchasing and upgrading up to ns.args[1] hacknet nodes, utilizing ns.args[0] as a percentage of total available funds
+
 export async function main(ns, percent = ns.args[0], max_nodes = ns.args[1]) {
 
     while (true) {
